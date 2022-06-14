@@ -1,1 +1,0 @@
-document.getElementById('main').textContent='hello wrold'
