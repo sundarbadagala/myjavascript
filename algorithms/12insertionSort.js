@@ -28,4 +28,6 @@ function insertionSort2(arr) {
   return arr;
 }
 
+
+//BigO notation - O(n^2)
 console.log(insertionSort2(array));
