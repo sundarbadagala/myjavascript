@@ -28,6 +28,18 @@ function insertionSort2(arr) {
   return arr;
 }
 
+//--------------------------------------another method------------------------------------
+
+function insertionSort3(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    let j = i;
+    while (arr[j] < arr[j - 1]) {
+      [arr[j - 1], arr[j]] = [arr[j], arr[j - 1]];
+      j--;
+    }
+  }
+  return arr;
+}
 
 //BigO notation - O(n^2)
-console.log(insertionSort2(array));
+console.log(insertionSort3(array));

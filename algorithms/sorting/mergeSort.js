@@ -22,7 +22,30 @@ function merge(left, right) {
   return [...sortedArr, ...left, ...right];
 }
 
+//----------------------------------another method---------------------
+
+function meregeSort2(arr) {
+  if (arr.length < 2) {
+    return arr;
+  }
+  const mid = Math.floor(arr.length / 2);
+  const leftArr = mergeSort(arr.slice(0, mid));
+  const rightArr = mergeSort(arr.slice(mid));
+
+  let sortedArr = [];
+
+  while (leftArr.length && rightArr.length) {
+    if (leftArr[0] < rightArr[0]) {
+      sortedArr.push(leftArr.shift());
+    } else {
+      sortedArr.push(rightArr.shift());
+    }
+  }
+
+  return [...sortedArr, ...leftArr, ...rightArr];
+}
+
 //BigO - O(nlog(n))
 //Best time complexity in sorting
 
-console.log(mergeSort(array));
+console.log(meregeSort2(array));
