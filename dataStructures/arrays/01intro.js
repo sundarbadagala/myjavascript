@@ -32,3 +32,6 @@ console.log('first element', arr1[0])
 
 //Last element in the array
 console.log('last element', arr1[arr1.length-1])
+
+//Length of the array
+console.log('length', arr1.length)
