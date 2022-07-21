@@ -12,4 +12,12 @@ const isogram = (str)=> {
     return true                             //O(2n*3n) => O(5n^2)
 }
 
-console.log(isogram('moOse'))
+const isogram2 = (str)=>{
+    return new Set(str.toLowerCase()).size === str.length       //O(1)
+}
+
+const isogram3 = (str)=>{
+    return !/(\w).*\1/i.test(str)
+}
+
+console.log(isogram3('ajiy'))
