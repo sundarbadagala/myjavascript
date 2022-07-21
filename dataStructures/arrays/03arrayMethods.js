@@ -64,5 +64,16 @@ const res2 = arr1.every((item) => item < 4);
 const res9 = arr1.some(item => item < 3)
 const res10 = arr1.some(item => item > 5)
 
-console.log(res10)
+//-------------------------------------------SOME--------------------------------------
+//01. This executes a reducer function for array element.
+//02. Returns single value, i.e the function accumulated result
+//03. Doesn't change the original array
+
+const res11 = arr1.reduce((total, current)=> total + current, 0) // 0 + 1 + 2 + 3 + 4 + 5 = 15
+const res12 = arr1.reduce((t, c) => t+c, 5)                      // 5 + 1 + 2 + 3 + 4 + 5  = 20
+const res13 = arr1.reduce((acc, cur)=> acc + Math.pow(cur, 2),0) // 0 + (1*1) + (2*2) + (3*3) + (4*4) + (5*5) = 55
+
+
+console.log(res13)
+
 
