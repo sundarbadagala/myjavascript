@@ -1,7 +1,12 @@
-import {albumData} from './data/ablum.js'
-import {spaceXData} from './data/spaceX.js'
-import {usersData} from './data/users.js'
+import { dummyData } from './data/dummy.js'
 
-import {sortData} from './sortData.js'
+import {addData, searchData} from './helpers.js'
 
-console.log(sortData(albumData, 'title'))
+const reqBody = {
+    name:'ram',
+    age:12,
+    color:'white'
+}
+
+console.log(dummyData)
+console.log(searchData(dummyData, 'age',23))
