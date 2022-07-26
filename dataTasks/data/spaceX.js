@@ -1,4 +1,4 @@
-export const spaceX= [
+export const spaceXData= [
     {
       "flight_number": 1,
       "mission_name": "FalconSat",

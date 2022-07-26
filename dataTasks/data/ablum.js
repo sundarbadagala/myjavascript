@@ -1,4 +1,4 @@
-export const album = [
+export const albumData = [
     {
       "albumId": 1,
       "id": 1,
