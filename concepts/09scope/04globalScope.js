@@ -9,9 +9,9 @@ if(true){
 }
 
 function main(){
-    console.log('inside functoin',firstName)      //ram
-    console.log('inside functoin',lastName)       //raj
-    console.log('inside functoin',middleName)     //raghav
+    console.log('inside function',firstName)      //ram
+    console.log('inside function',lastName)       //raj
+    console.log('inside function',middleName)     //raghav
 }
 main()
 
@@ -24,6 +24,7 @@ if(true){
     firstName='jan'         //changing firstName ram => jan
 }
 console.log('changed in block', firstName)      //jan
+
 function mains(){
     firstName='varun'       //changing firstName jan => varun
 }
