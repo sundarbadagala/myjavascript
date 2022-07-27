@@ -1,12 +1,3 @@
-import { dummyData } from './data/dummy.js'
-
-import {addData, searchData} from './helpers.js'
-
-const reqBody = {
-    name:'ram',
-    age:12,
-    color:'white'
-}
-
-console.log(dummyData)
-console.log(searchData(dummyData, 'age',23))
+import { dummyData} from './data/dummy.js'
+import {objData1, objData2, objData3, arrData1, arrData2, arrData3} from './data/examples.js'
+import {isSameObjects, isDataAvailabe, updateData, addData, isSameArrays} from './helpers.js'

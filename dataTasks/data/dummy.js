@@ -1,23 +1,46 @@
 export const dummyData = [
     {
-        name:'ram',
-        age:23,
-        color:'red',
+        id:1,
+        name:{
+            firstName:'ram',
+            lastName:'kumar',
+        },
+        class:8,
+        age:18,
+        section:'a',
+        state:'andhra pradesh'
     },
     {
-        name:'veer',
-        age:100,
-        color:'orange',
+        id:2,
+        name:{
+            firstName:'vinay',
+            lastName:'raj',
+        },
+        class:7,
+        age:28,
+        section:'b',
+        state:'tamil nadu'
     },
     {
-        name:'raghav',
-        age:91,
-        color:'red',
+        id:3,
+        name:{
+            firstName:'vivek',
+            lastName:'sagar',
+        },
+        class:9,
+        age:18,
+        section:'a',
+        state:'telangana'
     },
     {
-        name:'arju',
-        age:23,
-        color:'blue',
+        id:4,
+        name:{
+            firstName:'akash',
+            lastName:'kumar',
+        },
+        class:8,
+        age:28,
+        section:'b',
+        state:'kerala'
     },
-
 ]
