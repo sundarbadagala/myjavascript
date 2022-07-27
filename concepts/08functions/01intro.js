@@ -15,3 +15,9 @@ function sum(a,b){
     return `sum of ${a} and ${b} is ${a+b}`
 }
 console.log(sum(2,3))
+
+//Types of functions
+//01 Function Declaration
+//02 Function Expression
+//03 Arrow Function
+//04 Immediately Invoked Function Expression (IIFE)

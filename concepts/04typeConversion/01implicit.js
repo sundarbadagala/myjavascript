@@ -8,7 +8,7 @@ console.log(true + '2')         //true2 => string + string
 console.log('4' - '2')          //2     => number - number
 console.log(4 - '2')            //2     => number - number
 console.log('a' - '2')          //NaN   => string - string
-console.log(true - '2')         //-1    => boolean - string
+console.log(true - '2')         //-1    => 1 - 2 
 
 console.log(5 - true)               //4
 console.log(5 - false)              //5

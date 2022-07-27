@@ -1,9 +1,11 @@
 //A closure is the combination of function bundled together with reference to it's surrounding state
-//Closures are created every time a function is created, at function cretion time.
+//Closures are created every time a function is created, at function creation time.
 
 //In JS, when we return a function from another function, we are effectively returning a combination of the function definition along with the function's scope.
 //This would let the function definition have an associated persistance memory which could hold on to live data between executions.
 //That combination of the function and its scope chain is what is called a closure in JS
+
+//A closure is a function having access to the parent scope, even after the parent function has closed.
 
 function outer1(){
     let counter = 0
@@ -31,7 +33,7 @@ function outer2(){
     }
     return inner2
 }
-const fn = outer2()
-fn()
-fn()
-fn()
+const add = outer2()
+add()
+add()
+add()
