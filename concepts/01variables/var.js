@@ -1,14 +1,11 @@
-//initialization
+//declaration
 var a
 
-//declaration
+//assigning
 a =10
-console.log(a)
+
+//re assigning
+a=20
 
 //re declaration
-a=20
-console.log(a)
-
-//re initialization
 var a = 30
-console.log(a)
