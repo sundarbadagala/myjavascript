@@ -57,6 +57,10 @@ export function updateData(data, reqBody, field){
 export function searchData(data, field, value){
     return data.filter(item => item[field]?.toString().toLowerCase().includes(value.toString().toLowerCase()))
 }
+//===================================================SEARCH DATA VALUE==================================
+export function searchDataValue(data, field, searchValue, getValue ){
+    return data.filter(item => item[field]?.toString().toLowerCase().includes(searchValue.toString().toLowerCase())).map(item => item[getValue] )
+}
 //===================================================IS DATA AVAILABLE==================================
 export function isDataAvailabe(data, field){
     return data.some(item => isSameObjects(item, field))

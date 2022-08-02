@@ -1,1 +1,0 @@
-export const jsonData = [{"regchange":{"new_state_name":"REVIEW STATE","old_state_name":"RIVIEW","is_state_changed":true,"new_section_name":"REVIEW","old_section_name":"501","new_district_name":"REVIEW DISTRICT","old_district_name":"REVIEW","is_section_changed":true,"regdata_updated_at":"2021-07-13 21:49:59","is_district_changed":true,"previous_regdata_at":null}}]
