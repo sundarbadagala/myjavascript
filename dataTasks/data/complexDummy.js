@@ -6,9 +6,18 @@ export const complexDummyData = [
             lastName:'kumar',
         },
         class:8,
-        age:18,
+        age:13,
         section:'a',
-        state:'andhra pradesh'
+        state:'andhra pradesh',
+        address:{
+            pin:500032,
+            city:'srikakulam',
+            phone_number:{
+                primary:8989889889,
+                secondary:7924789898
+            }
+        },
+        class_wise_marks:[28,23,82,90,98,65,12,99]
     },
     {
         id:2,
@@ -19,7 +28,16 @@ export const complexDummyData = [
         class:7,
         age:28,
         section:'b',
-        state:'tamil nadu'
+        state:'tamil nadu',
+        address:{
+            pin:500032,
+            city:'srikakulam',
+            phone_number:{
+                primary:7141313231,
+                secondary:9898981313
+            }
+        },
+        class_wise_marks:[28,23,82,90,98,65,12]
     },
     {
         id:3,
@@ -30,7 +48,16 @@ export const complexDummyData = [
         class:9,
         age:18,
         section:'a',
-        state:'telangana'
+        state:'telangana',
+        address:{
+            pin:500032,
+            city:'srikakulam',
+            phone_number:{
+                primary:9238923890,
+                secondary:9191919191
+            }
+        },
+        class_wise_marks:[99,98,91,97,90,96,91,90,90]
     },
     {
         id:4,
@@ -41,6 +68,15 @@ export const complexDummyData = [
         class:8,
         age:28,
         section:'b',
-        state:'kerala'
+        state:'kerala',
+        address:{
+            pin:500032,
+            city:'srikakulam',
+            phone_number:{
+                primary:9298999592,
+                secondary:1010101010
+            }
+        },
+        class_wise_marks:[1,4,1,7,1,3,9,7]
     },
 ]

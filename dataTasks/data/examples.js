@@ -6,9 +6,23 @@ export const objData1 = {
     section: "a",
     state: "andhra pradesh",
   }
-export const objData2 = {id: 1,name: "ram",age: 23,};
-export const objData3 = {id: 1,name: "raj",age: 89,};
+export const objData2 = {
+    id: 1,
+    name: "ravi kumar",
+    class: 8,
+    age: 18,
+    section: "a",
+    state: "andhra pradesh",
+  }
+export const objData3 = {
+    id: 3,
+    name: "anand nandan",
+    class: 6,
+    age: 20,
+    section: "b",
+    state: "andhra pradesh",
+  }
 
-export const arrData1=[1,2,3]
-export const arrData2=[1,2,3]
-export const arrData3=[1,2,3]
+export const arrData1=[3,1,554,121,23,3,1,1,45,-1,0,-23,76,0,-2]
+export const arrData2=['cat','an','dog','ant','call','bag','and','and','ball','can','yes','sun','man']
+export const arrData3=['a',4,9,'b','4',12,0,4,'an','and','ball',-9,'-1','bin']

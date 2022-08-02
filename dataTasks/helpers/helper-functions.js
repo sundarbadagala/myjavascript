@@ -1,4 +1,4 @@
-export function sortData(data, field){
+export function sort_data(data, field){
     let flag
     do{
         flag = false
