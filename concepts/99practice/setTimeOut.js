@@ -1,5 +1,14 @@
-for(var i=0; i<10;i++){
-    setTimeout(()=>{
-        console.log(i)
-    })
+//find output
+for(var i=1; i<3;i++){
+    const log=()=>{
+        console.log(i)          //3,3,3
+    }
+    setTimeout(log, 300)
+}
+
+for(let i=1; i<3;i++){
+    const log=()=>{
+        console.log(i)      //1,2,3
+    }
+    setTimeout(log, 3000)
 }
