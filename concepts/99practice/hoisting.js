@@ -1,3 +1,11 @@
+// x = 30
+// console.log(x)  //ReferenceError: x is not defined
+
+//---------------------------------------------------------------------------------
+
+// console.log(f)  //ReferenceError: f is not defined
+// f = 30
+
 //---------------------------------------------------------------------------------
 
 // console.log(c) //undefined
@@ -15,10 +23,6 @@
 
 //---------------------------------------------------------------------------------
 
-// x = 30
-// console.log(x)  //ReferenceError: x is not defined
-//---------------------------------------------------------------------------------
-
 // y = 20
 // console.log(y) //20
 // var y
@@ -34,3 +38,6 @@
 // b = 99
 // console.log(b)
 // const b     //SyntaxError: Missing initializer in const declaration
+
+
+
