@@ -38,6 +38,14 @@ export function sortDescendingData(data, field){
 export function addData(data, reqBody){
     return [...data, reqBody]
 }
+//===================================================ADD DATA ELEMENT====================================
+export function addDataElement(data, element){
+    for(let i =0; i < data.length; i++){
+        data[i]= {...data[i], ...element}
+    }
+    return data
+}
+
 //===================================================UPDATE DATA====================================
 export function updateData(data, reqBody, field){
     const isAlreadyExist =  data.some(item => item[field] === reqBody[field])
@@ -52,7 +60,6 @@ export function updateData(data, reqBody, field){
         return [...data, reqBody]
     }
 }
-
 //===================================================SEARCH DATA==================================
 export function searchData(data, field, value){
     return data.filter(item => item[field]?.toString().toLowerCase().includes(value.toString().toLowerCase()))

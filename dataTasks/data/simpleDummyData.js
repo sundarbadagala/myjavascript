@@ -1,4 +1,4 @@
-export const simpleDummyData = [
+export const simpleData = [
   {
     id: 1,
     name: "ram kumar",
