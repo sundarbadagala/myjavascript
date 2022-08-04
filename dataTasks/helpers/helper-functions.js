@@ -1,20 +1,23 @@
 //===================================================SORT DATA====================================
-export function sort_data(data, field){
-    let flag
-    do{
-        flag = false
-        for(let i=0; i < data.length; i++){
-            const d1 = data[i]?.[field]
-            const d2 = data[i+1]?.[field]
-            if(d1 > d2){
-                let temp = data[i]
-                data[i] = data[i+1]
-                data[i+1] = temp
-                flag = true
-            }
+export function sort_data(data, key){
+    if(data.length < 2){
+        return data
+    }
+    const mid = Math.floor(data.length/2)
+    const leftArr = sort_data(data.slice(0, mid), key)
+    const righArr = sort_data(data.slice(mid), key)
+    const sortedArr=[]
+    while(leftArr.length && righArr.length){
+        const lKey = leftArr[0][key]
+        const rKey = righArr[0][key]
+        if(lKey > rKey ){
+            sortedArr.push(righArr.shift())
+        }else{
+            sortedArr.push(leftArr.shift())
         }
-    }while(flag)
-    return data
+    }
+    return [...sortedArr, ...leftArr, ...righArr]
+
 }
 //===================================================SORT ASCENDING DATA====================================
 export function sort_ascending_data(data, field){

@@ -9,7 +9,7 @@ import {obj1, obj3, objPassed} from './data/examples.js'
 
 // const _sortedData = simpleData._sortData('name')
 // const sortedData = sortData(simpleData, 'name')
-// const sorted_data = sort_data(simpleData, 'name')
+const sorted_data = sort_data(simpleData, 'name')
 
 // const _addedData = simpleData._addData(obj1)
 // const addedData = addData(simpleData, obj1)
@@ -30,3 +30,5 @@ import {obj1, obj3, objPassed} from './data/examples.js'
 //const _searchedDataValue = simpleData._searchDataValue('class',8, 'name')
 //const searchedDataValue = searchDataValue(simpleData, 'class', 8, 'name')
 //const searched_data_value = search_data_value(simpleData, 'class', 8, 'name')
+
+console.log(sorted_data)
