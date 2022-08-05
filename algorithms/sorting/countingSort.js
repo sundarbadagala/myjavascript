@@ -1,15 +1,23 @@
-const array = [5,3,1,65,23,12,12,34,-1,0,-10]
+const array = [5,1,65,12,34,-1,0,-10]
 
 function countingSort(arr){
-    let countArr = Array(arr.length).fill(0)
-    for(let n of arr){
-        countArr[n]++
+    const count = []
+    const min = Math.min(...arr)
+    const max = Math.max.apply(Math, arr)
+    for(let i=min; i<=max; i++){
+        count[i] = 0
     }
-    let finalArr = []
-    for(let i=0; i<countArr.length; i++){
-        finalArr.push(...Array(countArr[i]).fill(i))
+    for(let i=0; i<= arr.length; i++){
+        count[arr[i]]++
     }
-    return finalArr
+    const sortedArr=[]
+    for(let i=min;i<=max; i++){
+        while(count[i] > 0){
+            sortedArr.push(i)
+            count[i]--
+        }
+    }
+    return sortedArr
 }
 
 console.log(countingSort(array))
