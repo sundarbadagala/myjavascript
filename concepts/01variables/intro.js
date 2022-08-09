@@ -1,4 +1,5 @@
 //variable is simply a name of storage location
+//before ES5 only "var", after in ES5(2015) let and const introdcued
 
 //======LOCAL VARIABLES====
 //A JavaScript local variable is declared inside block or function. It is accessible within the function or block only.
