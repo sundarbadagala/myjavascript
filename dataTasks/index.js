@@ -35,8 +35,6 @@ const sortedData = sortData(simpleData, 'class')
 
 //const multiReplacedData = multiReplaceData(simpleData, ['class','name'], [7, 'ram kumar'],[99,'bahubali'])
 
-// const overriddenData = overrideData(simpleData, {'class':90, name:'king', color:'red'})
-
 // const changedData = changeData(simpleData, {'class':90, name:'king', color:'red'})
 
 
