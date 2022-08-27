@@ -16,6 +16,10 @@ for(let i of map.values()){
 for(let i of map){
     console.log(i, i[0], i[1])
 }
+for(let [key, value] of map){
+    console.log('->',key, value)
+}
+
 for(let i in map){
     console.log(i)
 } //return nothing

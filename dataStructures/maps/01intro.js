@@ -13,3 +13,8 @@
 //map.keys()
 //map.values()
 //map.entries()
+
+//------------------------------------------
+//a map is an unordered collection of key value pairs both keys and values can be of any data type
+//to retrieve a value you can use the corresponding key
+//maps are iterables they can be used with a for off loop
