@@ -154,3 +154,28 @@ export function changeData(data, obj){
         return item 
     })
 }
+//==================================================REMOVE DUPLICATION====================
+export function removeDuplicateData(arr=[], key='id'){
+  const newArr=[]
+  for(let i=0; i<arr.length; i++){
+      if(newArr.filter(item => item[key] === arr[i][key] ).length === 0){
+          newArr.push(arr[i])
+      }
+  }
+  return newArr
+}
+
+//==================================================REMOVE DUPLICATION FROM START====================
+export function removeDuplicateDataFromStart(arr=[], key='id'){
+  return removeDuplicateData(arr, key)
+}
+//==================================================REMOVE DUPLICATION FROM LAST====================
+export function removeDuplicateDataFromLast(arr=[], key='id'){
+  const newArr=[]
+  for(let i=arr.length-1; i>=0; i--){
+      if(newArr.filter(item => item[key] === arr[i][key] ).length === 0){
+          newArr.push(arr[i])
+      }
+  }
+  return newArr
+}
