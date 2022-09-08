@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "http://console.log(JSON.stringify(getSubArrays(arr)));",
+            "request": "launch",
+            "url": "http://console.log(JSON.stringify(getSubArrays(arr)));"
+        }
+    ]
+}
