@@ -21,24 +21,24 @@ const memoizationSquareFn=(()=>{
 
 console.time()
 console.log(memoizationSquareFn(30000))
-console.time()
+console.timeEnd()
 
 console.time()
 console.log(memoizationSquareFn(30000))
-console.time()
+console.timeEnd()
 
 console.time()
 console.log(memoizationSquareFn(40000))
-console.time()
+console.timeEnd()
 
 console.time()
 console.log(memoizationSquareFn(30000))
-console.time()
+console.timeEnd()
 
 console.time()
 console.log(memoizationSquareFn(40000))
-console.time()
+console.timeEnd()
 
 console.time()
 console.log(memoizationSquareFn(40000))
-console.time()
+console.timeEnd()
