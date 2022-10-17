@@ -13,6 +13,7 @@ const squareFn=(n)=>{
 const memoizationFn=(callback)=>{
     const memoizedObj={}
     return (n)=>{
+        console.log('===>',memoizedObj)
         if(!memoizedObj[n]){
             memoizedObj[n] = callback(n)
         }

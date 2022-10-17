@@ -23,12 +23,12 @@ import {obj1, obj3, objPassed} from './data/examples.js'
 // const updatedData = updateData(simpleData, obj3, 'id')
 // const updated_data = update_data(simpleData, obj3, 'id')
 
-//const _searchedData= simpleData._searchData('class',8)
-//const searchedData = searchData(simpleData, 'class', 8)
+// const _searchedData= simpleData._searchData('class',8)
+// const searchedData = searchData(simpleData, 'class', 8)
 //const searched_data = search_data(simpleData, 'class', 8)
 
 //const _searchedDataValue = simpleData._searchDataValue('class',8, 'name')
-//const searchedDataValue = searchDataValue(simpleData, 'class', 8, 'name')
+const searchedDataValue = searchDataValue(simpleData, 'class', 8, 'name')
 //const searched_data_value = search_data_value(simpleData, 'class', 8, 'name')
 
 //const replacedData= replaceData(simpleData, 'class',8,90 )
@@ -37,7 +37,7 @@ import {obj1, obj3, objPassed} from './data/examples.js'
 
 // const changedData = changeData(simpleData, {'class':90, name:'king', color:'red'})
 
-const removedDuplicateData = removeDuplicateData(simpleData,'age')
-const removedDuplicateDataFromLast = removeDuplicateDataFromLast(simpleData, 'age')
+//const removedDuplicateData = removeDuplicateData(simpleData,'age')
+//const removedDuplicateDataFromLast = removeDuplicateDataFromLast(simpleData, 'age')
 
-console.log(removedDuplicateDataFromLast)
+console.log(searchedDataValue)
