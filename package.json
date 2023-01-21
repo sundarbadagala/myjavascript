@@ -2,6 +2,7 @@
     "type": "module",
     "dependencies": {
         "axios": "^0.27.2",
-        "node-fetch": "^3.2.10"
+        "node-fetch": "^3.2.10",
+        "xhr2": "^0.2.1"
     }
 }
