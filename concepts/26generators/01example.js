@@ -1,9 +1,10 @@
+//Generator Function declaration
 function* simpleGenerator(){
     yield 1
     yield 2
     yield 3
 }
-
+//Create Generator object
 const generatorObject = simpleGenerator()
 
 console.log(generatorObject.next());
