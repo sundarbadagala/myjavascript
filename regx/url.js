@@ -1,0 +1,2 @@
+export const urlOptional = /^((https?:\/\/)((www\.)?)([a-zA-Z0-9-.]+)\.((com)|(in)|(co.[a-zA-z]{2})|([a-zA-Z]{1,10}))\/([a-zA-Z0-9\?.%=#+&_\/-]+)|)$/
+export const urlRequired = /^(https?:\/\/)((www\.)?)([a-zA-Z0-9-.]+)\.((com)|(in)|(co.[a-zA-z]{2})|([a-zA-Z]{1,10}))\/([a-zA-Z0-9\?.%=#+&_\/-]+)$/
