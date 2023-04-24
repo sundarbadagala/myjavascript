@@ -1,10 +1,12 @@
 import axios from "axios";
 
-function caller(url) {
-  return axios
-    .get(url)
-    .then((res) => console.log(res.data))
-    .catch((err) => console.log(err.message));
+async function caller(url) {
+  try {
+    const res = await axios.get(url);
+    return console.log(res.data);
+  } catch (err) {
+    return console.log(err.message);
+  }
 }
 
 //--------------------------
