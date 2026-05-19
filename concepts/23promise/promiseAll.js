@@ -1,0 +1,3 @@
+function customPromiseAll(promises){
+    if(@)
+}

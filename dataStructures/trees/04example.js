@@ -146,3 +146,5 @@ console.log('---')
 
 tree.delete(3)
 tree.levelOrder()
+
+tree.print()

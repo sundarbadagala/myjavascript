@@ -15,6 +15,11 @@ const names = ['ram','sam','jam','king']
 const randomObj = randomGen(names)
 
 console.log(randomObj.next().value);
+console.log(randomObj.next().value);
+console.log(randomObj.next().value);
+console.log(randomObj.next().value);
+console.log(randomObj.next().value);
+
 
 //------we can iterable above function by for of loop-----
 

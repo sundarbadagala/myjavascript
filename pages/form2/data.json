@@ -1,0 +1,16 @@
+[
+    {
+        "type":"text",
+        "id":"title",
+        "name":"title",
+        "placeholder":"Enter title",
+        "label":"Title"
+    },
+    {
+        "type":"text",
+        "id":"body",
+        "name":"body",
+        "placeholder":"Enter body",
+        "label":"Body"
+    }
+]

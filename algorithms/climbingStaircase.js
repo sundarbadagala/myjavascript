@@ -9,11 +9,41 @@ function climbingStaircase(n) {
 }
 // BigO - O(n)
 
+console.log(climbingStaircase(1)); // 1
+console.log(climbingStaircase(2)); //(1,1) 2
+console.log(climbingStaircase(3)); //(1,1,1) (2,1) (1,2)
+console.log(climbingStaircase(4)); //(1,1,1,1) (1,1,2) (1,2,1) (2,1,1) (2,2)
+console.log(climbingStaircase(5)); //(1,1,1,1,1) (1,1,1,2) (1,1,2,1) (1,2,1,1) (2,1,1,1) (2,2,1) (2,1,2) (1,2,2)
+console.log(climbingStaircase(6)); //(1,1,1,1,1,1) (1,1,1,1,2) (1,1,1,2,1) (1,1,2,1,1) (1,2,1,1,1) (2,1,1,1,1) (2,1,1,2) (2,1,2,1) (2,2,1,1) (1,1,2,2) (1,2,2,1) (1,2,1,2) (2,2,2)
 
-console.log(climbingStaircase(1));  // 1
-console.log(climbingStaircase(2));  //(1,1) 2
-console.log(climbingStaircase(3));  //(1,1,1) (2,1) (1,2)
-console.log(climbingStaircase(4));  //(1,1,1,1) (1,1,2) (1,2,1) (2,1,1) (2,2)
-console.log(climbingStaircase(5));  //(1,1,1,1,1) (1,1,1,2) (1,1,2,1) (1,2,1,1) (2,1,1,1) (2,2,1) (2,1,2) (1,2,2)
-console.log(climbingStaircase(6));  //(1,1,1,1,1,1) (1,1,1,1,2) (1,1,1,2,1) (1,1,2,1,1) (1,2,1,1,1) (2,1,1,1,1) (2,1,1,2) (2,1,2,1) (2,2,1,1) (1,1,2,2) (1,2,2,1) (1,2,1,2) (2,2,2)
+// 2 steps
+function main2(n) {
+  if (n <= 2) return n;
+  let a = 1;
+  let b = 2;
+  for (let i = 3; i <= n; i++) {
+    let curr = a + b;
+    a = b;
+    b = curr;
+  }
+  return b;
+}
 
+console.log("--- main", main2(5));
+
+//3 steps
+function main3(n) {
+  if (n === 0) return 1;
+  if (n === 1) return 1;
+  if (n === 2) return 2;
+  let a = 1;
+  let b = 1;
+  let c = 2;
+  for (let i = 3; i <= n; i++) {
+    let curr = a + b + c;
+    a = b;
+    b = c;
+    c = curr;
+  }
+  return c;
+}

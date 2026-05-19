@@ -10,7 +10,7 @@ const resolveWorld = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve("world");
-    }, 2000);
+    }, 1000);
   });
 };
 

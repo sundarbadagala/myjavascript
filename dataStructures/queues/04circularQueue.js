@@ -65,15 +65,17 @@ queue.enqueue(4);
 queue.enqueue(5);
 queue.enqueue(6);
 queue.enqueue(7);
-console.log(queue.peek());
-queue.print();
-queue.dequeue();
-queue.dequeue();
-console.log(queue.size())
-queue.print();
-queue.enqueue(10);
-queue.enqueue(12);
 queue.enqueue(17);
+queue.enqueue(34);
+// console.log(queue.peek());
 queue.print();
-console.log(queue.peek());
-console.log(queue.size())
+// queue.dequeue();
+// queue.dequeue();
+// console.log(queue.size())
+// queue.print();
+// queue.enqueue(10);
+// queue.enqueue(12);
+// queue.enqueue(17);
+// queue.print();
+// console.log(queue.peek());
+// console.log(queue.size())

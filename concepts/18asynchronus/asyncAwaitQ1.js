@@ -4,7 +4,7 @@ const p = new Promise((res, rej) => {
   }, 1000);
 });
 
-const main = async () => {
+const main = () => {
   p.then((res) => console.log(res));
   console.log("hello world");
 };
@@ -24,7 +24,7 @@ const mainThree = async () => {
 
   const val2 = await p;
   console.log("hello world two");
-  console.log(val1);
+  console.log(val2);
 };
 
-mainThree()
+// mainThree()

@@ -6,9 +6,10 @@
 const duplicateEncode = (str) => {
   const val = str.toLowerCase().split("");          // toLowerCase => O(n) + Split => O(n)
   let res = [];
-  for (i in val) {                                  // loop O(n)
+  for (let i in val) {                                  // loop O(n)
     const newVal = [...val];                        // spread (iteration) => O(n)
     newVal.splice(i, 1);                            // splice => O(n)
+    console.log(newVal)
     if (newVal.includes(val[i])) {                  // includes => O(n)
       res.push(0);                                  // push => O(1)
     } else {
@@ -41,4 +42,4 @@ const duplicateEncode4 = (str)=>{
     .join('')
 }
 
-console.log(duplicateEncode4('hello'))
+console.log(duplicateEncode('hello'))

@@ -1,14 +1,14 @@
 const arr = [1, 2, 3];
 
-// const combinations = (arr) =>
-//   arr.reduce(
-//     (acc, item) => {
-//       return acc.concat(acc.map((x) => [...x, item]));
-//     },
-//     [[]]
-//   );
+const combinations = (arr) =>
+  arr.reduce(
+    (acc, item) => {
+      return acc.concat(acc.map((x) => [...x, item]));
+    },
+    [[]]
+  );
 
-// console.log(combinations(arr).filter((a) => a.length > 0));
+console.log(combinations(arr).filter((a) => a.length > 0));
 
 
 // var combine = function(a, min=1) {
@@ -37,8 +37,8 @@ const arr = [1, 2, 3];
 
 // var arr = [1,2,3,4,5];
 
-function getAllCombos(arr){
-   if(arr[0] === undefined) return [arr]
-   return getAllCombos(arr.slice(1)).flatMap(el => [el.concat(arr[0]), el])
-}
-console.log(getAllCombos(arr));
+// function getAllCombos(arr){
+//    if(arr[0] === undefined) return [arr]
+//    return getAllCombos(arr.slice(1)).flatMap(el => [el.concat(arr[0]), el])
+// }
+// console.log(getAllCombos(arr));

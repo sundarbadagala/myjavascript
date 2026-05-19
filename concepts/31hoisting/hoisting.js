@@ -1,3 +1,5 @@
+// Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their scope before code execution. This means that variables and functions can be used before they are declared.
+
 // x = 30
 // console.log(x)  //ReferenceError: x is not defined
 

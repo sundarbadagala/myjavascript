@@ -79,4 +79,4 @@ function Kadenes4(arr){
     }
     return maxSum
 }
-// console.log(Kadenes4(array));
+console.log(Kadenes4(array));

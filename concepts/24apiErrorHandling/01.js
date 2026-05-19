@@ -7,20 +7,30 @@ function caller(url, props) {
     request.open(method, url, true);
     request.send();
     request.onload = () => {
-      if (request.status === 200) {
-        resolve(JSON.parse(request.responseText));
+      if (request.status >= 200 && request.status < 400) {
+        const res = {
+          status: request.status,
+          statusText: request.statusText,
+          data: JSON.parse(request.responseText),
+        };
+        resolve(res);
       } else {
-        reject(`error ${request.status} ${request.statusText}`);
+        const res = {
+          status: request.status,
+          statusText: request.statusText,
+          data: JSON.parse(request.responseText),
+        };
+        reject(res);
       }
     };
   });
 }
 //----------------------------------------------------------------
-var url = "https://jsonplaceholder.typicode.com/user/3";
-var j = 'https://httpstat.us/500'
+var url = "https://fakestoreapi.com/products";
+var j = "https://httpstat.us/500";
 
-console.log('before call');
-caller(j)
+console.log("before call");
+caller(url)
   .then((res) => console.log(res))
   .catch((err) => console.log(err));
-console.log('after call');
+console.log("after call");
