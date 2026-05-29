@@ -1,13 +1,15 @@
-function main(n){
-  let sum = n
-  function inner(nextSum){
-    if(nextSum === undefined){
+
+
+function main(num){
+  let sum = num
+  function inner(nestedValue){
+    if(nestedValue === undefined){
       return sum
     }
-    sum += nextSum
+    sum += nestedValue
     return inner
   }
   return inner
 }
 
-console.log(main(2)(4)())
+console.log(main(3)(3)())
