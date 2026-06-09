@@ -12,3 +12,5 @@ promise.then((res)=>myFn(res), (err)=>myFn(err))
 const myFn=(val)=>{
     console.log(val)
 }
+
+promise.then(res => console.log(res)).then(err => console.log(err))
